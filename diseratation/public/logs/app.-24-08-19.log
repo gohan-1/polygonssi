@@ -1,0 +1,95 @@
+[2024-08-19T19:23:49.430] [INFO] webApp - { privateKey: 'fgd' }
+[2024-08-19T19:23:49.431] [ERROR] webApp - Error occurred in createKeyPair function Error: invalid arrayify value (argument="value", value="fgd", code=INVALID_ARGUMENT, version=bytes/5.7.0)
+[2024-08-19T19:34:07.410] [INFO] webApp - {
+  privateKey: '0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80'
+}
+[2024-08-19T19:34:07.453] [INFO] webApp - did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+[2024-08-19T19:34:42.859] [INFO] webApp - {
+  privateKey: '0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80'
+}
+[2024-08-19T19:34:42.871] [INFO] webApp - did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+[2024-08-19T19:35:07.627] [INFO] webApp - {
+  privateKey: '0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80'
+}
+[2024-08-19T19:35:07.634] [INFO] webApp - did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+[2024-08-19T19:35:14.699] [INFO] webApp - {
+  privateKey: '0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80'
+}
+[2024-08-19T19:35:14.706] [INFO] webApp - did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+[2024-08-19T19:35:17.554] [INFO] webApp - {
+  privateKey: '0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80'
+}
+[2024-08-19T19:35:17.562] [INFO] webApp - did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+[2024-08-19T19:38:08.266] [INFO] webApp - {
+  privateKey: '0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80'
+}
+[2024-08-19T19:38:08.269] [INFO] webApp - did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+[2024-08-19T19:38:53.460] [INFO] webApp - [registerDID] txnHash - "{\"@context\":\"https://w3id.org/did/v1\",\"id\":\"did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\"verificationMethod\":[{\"id\":\"did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266#key-1\",\"type\":\"EcdsaSecp256k1VerificationKey2019\",\"controller\":\"did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\"publicKeyBase58\":\"7Lnm1ez9t4ynPHp7MoG9Lwidg8VKwQLUrUttfvHGXz8LddMc8tQrUUDFukUgpQZRVm4xx9KGyAU8E6v3tBpAHH3oEyyaC\"}]}\u0000\u0000\u0000\u0000" 
+
+
+
+[2024-08-19T19:41:14.299] [INFO] webApp - {
+  privateKey: '0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80'
+}
+[2024-08-19T19:41:14.305] [INFO] webApp - did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+[2024-08-19T19:41:18.465] [INFO] webApp - [registerDID] txnHash - "{\"@context\":\"https://w3id.org/did/v1\",\"id\":\"did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\"verificationMethod\":[{\"id\":\"did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266#key-1\",\"type\":\"EcdsaSecp256k1VerificationKey2019\",\"controller\":\"did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\"publicKeyBase58\":\"7Lnm1ez9t4ynPHp7MoG9Lwidg8VKwQLUrUttfvHGXz8LddMc8tQrUUDFukUgpQZRVm4xx9KGyAU8E6v3tBpAHH3oEyyaC\"}]}\u0000\u0000\u0000\u0000" 
+
+
+
+[2024-08-19T19:45:53.574] [INFO] webApp - {
+  privateKey: '0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80'
+}
+[2024-08-19T19:45:53.582] [INFO] webApp - did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+[2024-08-19T19:45:57.760] [INFO] webApp - [registerDID] txnHash - "{\"@context\":\"https://w3id.org/did/v1\",\"id\":\"did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\"verificationMethod\":[{\"id\":\"did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266#key-1\",\"type\":\"EcdsaSecp256k1VerificationKey2019\",\"controller\":\"did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\"publicKeyBase58\":\"7Lnm1ez9t4ynPHp7MoG9Lwidg8VKwQLUrUttfvHGXz8LddMc8tQrUUDFukUgpQZRVm4xx9KGyAU8E6v3tBpAHH3oEyyaC\"}]}\u0000\u0000\u0000\u0000" 
+
+
+
+[2024-08-19T20:54:34.295] [INFO] webApp - {
+  privateKey: '0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80'
+}
+[2024-08-19T20:54:34.302] [INFO] webApp - did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+[2024-08-19T20:54:38.499] [INFO] webApp - [registerDID] txnHash - "{\"@context\":\"https://w3id.org/did/v1\",\"id\":\"did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\"verificationMethod\":[{\"id\":\"did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266#key-1\",\"type\":\"EcdsaSecp256k1VerificationKey2019\",\"controller\":\"did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\"publicKeyBase58\":\"7Lnm1ez9t4ynPHp7MoG9Lwidg8VKwQLUrUttfvHGXz8LddMc8tQrUUDFukUgpQZRVm4xx9KGyAU8E6v3tBpAHH3oEyyaC\"}]}\u0000\u0000\u0000\u0000" 
+
+
+
+[2024-08-19T22:54:39.854] [INFO] webApp - {
+  privateKey: '0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80'
+}
+[2024-08-19T22:54:39.861] [INFO] webApp - did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+[2024-08-19T22:54:44.047] [INFO] webApp - [registerDID] txnHash - "{\"@context\":\"https://w3id.org/did/v1\",\"id\":\"did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\"verificationMethod\":[{\"id\":\"did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266#key-1\",\"type\":\"EcdsaSecp256k1VerificationKey2019\",\"controller\":\"did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\"publicKeyBase58\":\"7Lnm1ez9t4ynPHp7MoG9Lwidg8VKwQLUrUttfvHGXz8LddMc8tQrUUDFukUgpQZRVm4xx9KGyAU8E6v3tBpAHH3oEyyaC\"}]}\u0000\u0000\u0000\u0000" 
+
+
+
+[2024-08-19T22:56:57.956] [INFO] webApp - {
+  privateKey: '0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80'
+}
+[2024-08-19T22:56:57.961] [INFO] webApp - did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+[2024-08-19T22:57:00.294] [INFO] webApp - {
+  privateKey: '0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80'
+}
+[2024-08-19T22:57:00.305] [INFO] webApp - did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+[2024-08-19T22:57:02.148] [INFO] webApp - [registerDID] txnHash - "{\"@context\":\"https://w3id.org/did/v1\",\"id\":\"did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\"verificationMethod\":[{\"id\":\"did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266#key-1\",\"type\":\"EcdsaSecp256k1VerificationKey2019\",\"controller\":\"did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\"publicKeyBase58\":\"7Lnm1ez9t4ynPHp7MoG9Lwidg8VKwQLUrUttfvHGXz8LddMc8tQrUUDFukUgpQZRVm4xx9KGyAU8E6v3tBpAHH3oEyyaC\"}]}\u0000\u0000\u0000\u0000" 
+
+
+
+[2024-08-19T22:57:04.493] [INFO] webApp - [registerDID] txnHash - "{\"@context\":\"https://w3id.org/did/v1\",\"id\":\"did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\"verificationMethod\":[{\"id\":\"did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266#key-1\",\"type\":\"EcdsaSecp256k1VerificationKey2019\",\"controller\":\"did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\"publicKeyBase58\":\"7Lnm1ez9t4ynPHp7MoG9Lwidg8VKwQLUrUttfvHGXz8LddMc8tQrUUDFukUgpQZRVm4xx9KGyAU8E6v3tBpAHH3oEyyaC\"}]}\u0000\u0000\u0000\u0000" 
+
+
+
+[2024-08-19T22:57:20.576] [INFO] webApp - {
+  privateKey: '0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80'
+}
+[2024-08-19T22:57:20.579] [INFO] webApp - did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+[2024-08-19T22:57:24.756] [INFO] webApp - [registerDID] txnHash - "{\"@context\":\"https://w3id.org/did/v1\",\"id\":\"did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\"verificationMethod\":[{\"id\":\"did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266#key-1\",\"type\":\"EcdsaSecp256k1VerificationKey2019\",\"controller\":\"did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\"publicKeyBase58\":\"7Lnm1ez9t4ynPHp7MoG9Lwidg8VKwQLUrUttfvHGXz8LddMc8tQrUUDFukUgpQZRVm4xx9KGyAU8E6v3tBpAHH3oEyyaC\"}]}\u0000\u0000\u0000\u0000" 
+
+
+
+[2024-08-19T22:58:06.046] [INFO] webApp - {
+  privateKey: '0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80'
+}
+[2024-08-19T22:58:06.052] [INFO] webApp - did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+[2024-08-19T22:58:10.234] [INFO] webApp - [registerDID] txnHash - "{\"@context\":\"https://w3id.org/did/v1\",\"id\":\"did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\"verificationMethod\":[{\"id\":\"did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266#key-1\",\"type\":\"EcdsaSecp256k1VerificationKey2019\",\"controller\":\"did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\"publicKeyBase58\":\"7Lnm1ez9t4ynPHp7MoG9Lwidg8VKwQLUrUttfvHGXz8LddMc8tQrUUDFukUgpQZRVm4xx9KGyAU8E6v3tBpAHH3oEyyaC\"}]}\u0000\u0000\u0000\u0000" 
+
+
+
+[2024-08-19T23:23:06.890] [INFO] webApp - Schema Name: GBAMembershipType1

@@ -1,0 +1,44 @@
+[2024-08-20T00:00:28.358] [INFO] webApp - Schema Name: GBAMembershipType1
+[2024-08-20T00:00:36.230] [INFO] webApp - Schema Name: GBAMembershipType1
+[2024-08-20T00:01:54.399] [INFO] webApp - Schema Name: GBAMembershipType1
+[2024-08-20T00:02:34.969] [INFO] webApp - Schema Name: GBAMembershipType1
+[2024-08-20T00:03:16.780] [INFO] webApp - Schema Name: GBAMembershipType14
+[2024-08-20T00:03:19.539] [INFO] webApp - Schema Name: GBAMembershipType14
+[2024-08-20T00:06:14.753] [INFO] webApp - Schema Name: GBAMembershipType14
+[2024-08-20T00:06:20.928] [INFO] webApp - Schema Name: GBAMembershipType1
+[2024-08-20T21:08:03.092] [INFO] webApp - {
+  privateKey: '0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80'
+}
+[2024-08-20T21:08:03.139] [INFO] webApp - did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+[2024-08-20T21:08:07.371] [INFO] webApp - [registerDID] txnHash - "{\"@context\":\"https://w3id.org/did/v1\",\"id\":\"did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\"verificationMethod\":[{\"id\":\"did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266#key-1\",\"type\":\"EcdsaSecp256k1VerificationKey2019\",\"controller\":\"did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\"publicKeyBase58\":\"7Lnm1ez9t4ynPHp7MoG9Lwidg8VKwQLUrUttfvHGXz8LddMc8tQrUUDFukUgpQZRVm4xx9KGyAU8E6v3tBpAHH3oEyyaC\"}]}\u0000\u0000\u0000\u0000" 
+
+
+
+[2024-08-20T21:16:13.091] [INFO] webApp - Schema Name: GBAMembershipType1
+[2024-08-20T21:38:47.165] [INFO] webApp - Schema Name: GBAMembershipType1
+[2024-08-20T21:51:02.346] [INFO] webApp - {
+  privateKey: '0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80'
+}
+[2024-08-20T21:51:02.360] [INFO] webApp - did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+[2024-08-20T21:51:06.551] [INFO] webApp - [registerDID] txnHash - "{\"@context\":\"https://w3id.org/did/v1\",\"id\":\"did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\"verificationMethod\":[{\"id\":\"did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266#key-1\",\"type\":\"EcdsaSecp256k1VerificationKey2019\",\"controller\":\"did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\"publicKeyBase58\":\"7Lnm1ez9t4ynPHp7MoG9Lwidg8VKwQLUrUttfvHGXz8LddMc8tQrUUDFukUgpQZRVm4xx9KGyAU8E6v3tBpAHH3oEyyaC\"}]}\u0000\u0000\u0000\u0000" 
+
+
+
+[2024-08-20T21:51:14.961] [INFO] webApp - Schema Name: GBAMembershipType1
+[2024-08-20T21:58:12.719] [INFO] webApp - {
+  privateKey: '0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80'
+}
+[2024-08-20T21:58:12.724] [INFO] webApp - did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+[2024-08-20T21:58:16.875] [INFO] webApp - [registerDID] txnHash - "{\"@context\":\"https://w3id.org/did/v1\",\"id\":\"did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\"verificationMethod\":[{\"id\":\"did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266#key-1\",\"type\":\"EcdsaSecp256k1VerificationKey2019\",\"controller\":\"did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\"publicKeyBase58\":\"7Lnm1ez9t4ynPHp7MoG9Lwidg8VKwQLUrUttfvHGXz8LddMc8tQrUUDFukUgpQZRVm4xx9KGyAU8E6v3tBpAHH3oEyyaC\"}]}\u0000\u0000\u0000\u0000" 
+
+
+
+[2024-08-20T21:58:37.847] [INFO] webApp - {
+  privateKey: '0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80'
+}
+[2024-08-20T21:58:37.858] [INFO] webApp - did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+[2024-08-20T21:58:42.049] [INFO] webApp - [registerDID] txnHash - "{\"@context\":\"https://w3id.org/did/v1\",\"id\":\"did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\"verificationMethod\":[{\"id\":\"did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266#key-1\",\"type\":\"EcdsaSecp256k1VerificationKey2019\",\"controller\":\"did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\"publicKeyBase58\":\"7Lnm1ez9t4ynPHp7MoG9Lwidg8VKwQLUrUttfvHGXz8LddMc8tQrUUDFukUgpQZRVm4xx9KGyAU8E6v3tBpAHH3oEyyaC\"}]}\u0000\u0000\u0000\u0000" 
+
+
+
+[2024-08-20T21:58:47.519] [INFO] webApp - Schema Name: GBAMembershipType1

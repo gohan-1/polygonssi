@@ -1,0 +1,47 @@
+[2024-08-03T12:48:44.989] [INFO] webApp - {}
+[2024-08-03T12:48:45.067] [INFO] webApp - string
+[2024-08-03T12:48:45.070] [INFO] webApp - Wrong network enter!
+[2024-08-03T12:50:06.852] [INFO] webApp - {}
+[2024-08-03T12:50:06.941] [INFO] webApp - string
+[2024-08-03T12:50:06.944] [INFO] webApp - Wrong network enter!
+[2024-08-03T13:07:02.941] [INFO] webApp - {}
+[2024-08-03T13:07:03.022] [INFO] webApp - string
+[2024-08-03T13:07:03.026] [INFO] webApp - Wrong network enter!
+[2024-08-03T13:07:49.937] [INFO] webApp - {}
+[2024-08-03T13:07:49.958] [INFO] webApp - string
+[2024-08-03T13:07:49.961] [INFO] webApp - Wrong network enter!
+[2024-08-03T13:07:50.834] [INFO] webApp - {}
+[2024-08-03T13:07:50.851] [INFO] webApp - string
+[2024-08-03T13:07:50.854] [INFO] webApp - Wrong network enter!
+[2024-08-03T13:08:40.870] [INFO] webApp - {}
+[2024-08-03T13:08:40.953] [INFO] webApp - string
+[2024-08-03T13:08:40.956] [INFO] webApp - did:polygon:testnet:0x5E44B8565AAf73fA4B61572692e6A850d0A55Cd4
+[2024-08-03T13:08:54.118] [INFO] webApp - {}
+[2024-08-03T13:08:54.137] [INFO] webApp - string
+[2024-08-03T13:08:54.139] [INFO] webApp - did:polygon:testnet:0x4657418C294D3F8AeddF13b8ccC364B1f4C8C063
+[2024-08-03T22:40:11.580] [INFO] webApp - {}
+[2024-08-03T22:40:11.659] [INFO] webApp - string
+[2024-08-03T22:40:11.662] [INFO] webApp - did:polygon:testnet:0x0Fa4909993Fa03bcab7b88E1A381f6677E51cf09
+[2024-08-03T22:42:49.377] [INFO] webApp - {}
+[2024-08-03T22:42:49.455] [INFO] webApp - string
+[2024-08-03T22:42:49.458] [INFO] webApp - did:polygon:testnet:0x2C97bb37997Da83d3d1E32d5153df0a797f25143
+[2024-08-03T22:43:04.244] [INFO] webApp - {}
+[2024-08-03T22:43:04.326] [INFO] webApp - string
+[2024-08-03T22:43:04.329] [INFO] webApp - did:polygon:testnet:0xBaf91AAADa71F9E49Bd065795367d418329d2E97
+[2024-08-03T22:44:22.674] [INFO] webApp - {}
+[2024-08-03T22:44:22.711] [INFO] webApp - did:polygon:testnet:0xBaf91AAADa71F9E49Bd065795367d418329d2E97
+[2024-08-03T22:44:25.893] [INFO] webApp - {}
+[2024-08-03T22:44:25.897] [INFO] webApp - did:polygon:testnet:0xBaf91AAADa71F9E49Bd065795367d418329d2E97
+[2024-08-03T22:44:26.725] [INFO] webApp - {}
+[2024-08-03T22:44:26.729] [INFO] webApp - did:polygon:testnet:0xBaf91AAADa71F9E49Bd065795367d418329d2E97
+[2024-08-03T22:44:27.364] [INFO] webApp - {}
+[2024-08-03T22:44:27.369] [INFO] webApp - did:polygon:testnet:0xBaf91AAADa71F9E49Bd065795367d418329d2E97
+[2024-08-03T23:32:22.957] [ERROR] webApp - Error occurred in registerDID function  TypeError: Cannot read properties of undefined (reading 'split')
+[2024-08-03T23:45:16.291] [ERROR] webApp - Error occurred in registerDID function  TypeError: Cannot read properties of undefined (reading 'JsonRpcProvider')
+[2024-08-03T23:48:17.267] [ERROR] webApp - Error occurred in registerDID function  TypeError: Cannot read properties of undefined (reading 'JsonRpcProvider')
+[2024-08-03T23:49:44.960] [ERROR] webApp - Error occurred in registerDID function  TypeError: Cannot read properties of undefined (reading 'JsonRpcProvider')
+[2024-08-03T23:50:29.276] [ERROR] webApp - Error occurred in registerDID function  TypeError: ethers.providers is not a constructor
+[2024-08-03T23:50:48.133] [ERROR] webApp - Error occurred in registerDID function  TypeError: Cannot read properties of undefined (reading 'JsonRpcProvider')
+[2024-08-03T23:51:14.609] [ERROR] webApp - Error occurred in registerDID function  TypeError: Cannot read properties of undefined (reading 'JsonRpcProvider')
+[2024-08-03T23:56:46.168] [ERROR] webApp - Error occurred in registerDID function  TypeError: Cannot read properties of undefined (reading 'getDID')
+[2024-08-03T23:58:42.949] [ERROR] webApp - Error occurred in registerDID function  TypeError: Cannot read properties of undefined (reading 'getDID')

@@ -1,0 +1,359 @@
+openapi: 3.0.0
+info:
+  title: DID Issuer API
+  description: API for managing Decentralized Identifiers (DIDs) and Verifiable Credentials (VCs).
+  version: 1.0.0
+
+servers:
+  - url: http://localhost:4200
+    description: Local server
+
+paths:
+  /api/issuer/createDid:
+    get:
+      summary: Create a DID
+      description: Generates a new Decentralized Identifier (DID).
+      parameters:
+        - in: query
+          name: privateKey
+          schema:
+            type: string
+          required: false
+          description: Private key for creating the DID. Defaults to the PRIVATEKEY from environment variables.
+      responses:
+        '200':
+          description: Successfully created DID
+          content:
+            application/json:
+              schema:
+                type: string
+        '500':
+          description: Server error
+
+  /api/issuer/registerDid:
+    post:
+      summary: Register DID
+      description: Registers a DID on the blockchain.
+      parameters:
+        - in: query
+          name: privateKey
+          schema:
+            type: string
+          required: false
+          description: Private key for registering the DID. Defaults to the PRIVATEKEY from environment variables.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                did:
+                  type: string
+                  example: did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+      responses:
+        '200':
+          description: Successfully registered DID
+          content:
+            application/json:
+              schema:
+                type: string
+        '500':
+          description: Server error
+
+  /api/issuer/getDID:
+    post:
+      summary: Retrieve a DID
+      description: Retrieves a Decentralized Identifier (DID) based on the provided private key and DID.
+      parameters:
+        - in: query
+          name: privateKey
+          schema:
+            type: string
+          required: false
+          description: Private key for retrieving the DID. Defaults to the PRIVATEKEY from environment variables.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                did:
+                  type: string
+                  example: did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+      responses:
+        '200':
+          description: Successfully retrieved DID
+          content:
+            application/json:
+              schema:
+                type: string
+        '500':
+          description: Server error
+
+  /api/issuer/createSchema:
+    post:
+      summary: Create Schema
+      description: Creates a new schema for verifiable credentials.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                schemaName:
+                  type: string
+                  example: GBAMembershipType1
+                description:
+                  type: string
+                  example: Membership Document for GBA Credential
+                attributes:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      attributeName:
+                        type: string
+                        example: userName
+                      type:
+                        type: string
+                        example: alphanumeric
+                      description:
+                        type: string
+                        example: Username of the user
+                      required:
+                        type: boolean
+                        example: true
+                      maxLength:
+                        type: string
+                        example: "12"
+                expiration:
+                  type: object
+                  properties:
+                    value:
+                      type: integer
+                      example: 1
+                    unit:
+                      type: string
+                      example: years
+      responses:
+        '201':
+          description: Schema created successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: true
+                  data:
+                    type: object
+                  message:
+                    type: string
+                    example: Schema created and submitted successfully
+        '500':
+          description: Server error
+
+  /api/issuer/schema/{schemaName}:
+    get:
+      summary: Get schema by name
+      parameters:
+        - name: schemaName
+          in: path
+          required: true
+          description: The name of the schema to retrieve
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  name:
+                    type: string
+                  fields:
+                    type: array
+                    items:
+                      type: string
+        '404':
+          description: Schema not found
+        '500':
+          description: Internal server error
+
+  /api/issuer/createVerifiableCredential:
+    post:
+      summary: Create a Verifiable Credential
+      description: Endpoint to create a verifiable credential.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                credentialSubject:
+                  type: object
+                  description: The subject of the credential.
+                  example:
+                    id: did:example:123
+                    name: John Doe
+                schemaName:
+                  type: string
+                  description: The schema name for the credential.
+                  example: MembershipSchema
+      responses:
+        '201':
+          description: Verifiable Credential created successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: true
+                  data:
+                    type: object
+                    description: The verifiable credential data
+                    example:
+                      "@context": "https://www.w3.org/2018/credentials/v1"
+                      "type": ["VerifiableCredential"]
+                      "issuer": "did:example:456"
+                      "credentialSubject": 
+                        id: did:example:123
+                        name: John Doe
+                  hash:
+                    type: string
+                    description: Hash of the verifiable credential
+                    example: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                  message:
+                    type: string
+                    example: Verifiable Credential created and submitted successfully
+                  status:
+                    type: integer
+                    example: 201
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: integer
+                    example: 400
+                  error:
+                    type: string
+                    example: Membership Document Creation Failed
+
+      parameters:
+        - in: header
+          name: did
+          schema:
+            type: string
+          required: false
+          description: User's DID (Decentralized Identifier)
+
+  /api/issuer/storeVc:
+    post:
+      summary: Store Verifiable Credential (VC) Hash
+      description: Stores the hash of a verifiable credential associated with a DID.
+      parameters:
+        - in: query
+          name: privateKey
+          schema:
+            type: string
+          required: false
+          description: Private key for storing the VC hash. Defaults to the PRIVATEKEY from environment variables.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                did:
+                  type: string
+                  example: did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+                credentialHash:
+                  type: string
+                  example: CbVJs6RbAB8gXb1t1AB5z1hPzkhCkkAqYQMj7Mxq3HPt
+      responses:
+        '200':
+          description: Successfully stored VC hash
+          content:
+            application/json:
+              schema:
+                type: string
+        '500':
+          description: Server error
+
+  /api/issuer/getVc:
+    post:
+      summary: Retrieve Verifiable Credential (VC) Hash
+      description: Retrieves the hash of a verifiable credential associated with a DID.
+      parameters:
+        - in: query
+          name: privateKey
+          schema:
+            type: string
+          required: false
+          description: Private key for retrieving the VC hash. Defaults to the PRIVATEKEY from environment variables.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                did:
+                  type: string
+                  example: did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+      responses:
+        '200':
+          description: Successfully retrieved VC hash
+          content:
+            application/json:
+              schema:
+                type: string
+        '500':
+          description: Server error
+
+  /api/issuer/verifyVC:
+    post:
+      summary: Verify Verifiable Credential (VC)
+      description: Verifies a Verifiable Credential by comparing its hash with the stored hash.
+      parameters:
+        - in: query
+          name: privateKey
+          schema:
+            type: string
+          required: false
+          description: Private key for verifying the VC. Defaults to the PRIVATEKEY from environment variables.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                did:
+                  type: string
+                  example: did:polygon:testnet:0xf39Fd6
+      responses:
+        '200':
+          description: Verification successful
+          content:
+            application/json:
+              schema:
+                type: string
+        '500':
+          description: Server error

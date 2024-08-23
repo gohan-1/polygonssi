@@ -1,0 +1,4 @@
+[2024-08-11T13:10:55.938] [ERROR] webApp - Error occurred in registerDID function  Error: connect ECONNREFUSED 127.0.0.1:8545
+[2024-08-11T14:05:27.440] [INFO] webApp - Error occurred in updateDidDoc function TypeError: Cannot read properties of undefined (reading 'storeVcHash')
+[2024-08-11T14:09:16.893] [INFO] webApp - Error occurred in updateDidDoc function Error: could not decode result data (value="0x", info={ "method": "getVcDetails", "signature": "getVcDetails(address,string)" }, code=BAD_DATA, version=6.13.2)
+[2024-08-11T14:12:23.282] [INFO] webApp - Error occurred in updateDidDoc function Error: could not decode result data (value="0x", info={ "method": "getVcDetails", "signature": "getVcDetails(address,string)" }, code=BAD_DATA, version=6.13.2)
