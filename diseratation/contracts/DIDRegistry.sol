@@ -83,9 +83,7 @@ contract DidRegistry {
         return did[_id].did_doc;
     }
 
-    function setTest(uint8 _id,string memory value) public  {
-         test[_id]= value;
-    }
+
     /**
      *@dev To Update the DID doc
      *@param _id - Address that refers to the DID doc

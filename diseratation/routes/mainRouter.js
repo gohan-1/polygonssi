@@ -9,6 +9,7 @@ const vcController = require('../controller/verifiableCred')
 const schemaController = require('../controller/schemaController') 
 const {loggerWeb} = require('../config/logger');
 const { response } = require("express");
+const userController = require('../controller/userController.js')
 const sdk = require('../sdk');
 const createError = require('http-errors');
 
@@ -154,12 +155,28 @@ router.post('/api/user/register', async (req,res,next)=>{
         // if(existSchema){
         //     throw createError(400,'Schema Creation Failed - Schema Already Exist');
         // }
-        const jsonSchema = await schemaController.createSchema(req.body);
-        res.status(201).json({success:true, data: jsonSchema, message: 'Schema created and submited successfully', status:201});
+        const jsonSchema = await userController.register(req.body);
+        res.status(201).json({success:true, data: jsonSchema, message: 'User data added successfully', status:201});
     } catch (error) {
         next(error);
     }
 });
+
+router.post('/api/user/login', async (req,res,next)=>{
+    try {
+        // loggerWeb.info(`Schema Details: ${JSON.stringify(req.body)}`);
+        // const existSchema = await issuerController.getSchemaDetails(req.body.schemaName);
+        // if(existSchema){
+        //     throw createError(400,'Schema Creation Failed - Schema Already Exist');
+        // }
+        const jsonSchema = await userController.login(req.body);
+        res.status(201).json({success:true, data: jsonSchema, message: 'Resonse of user', status:201});
+    } catch (error) {
+        next(error);
+    }
+});
+
+
 router.get('/api/issuer/schema/:schemaName', async (req,res,next)=>{
     try {
         loggerWeb.info(`Schema Name: ${req.params.schemaName}`);
