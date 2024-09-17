@@ -1,0 +1,101 @@
+[2024-09-14T10:47:37.384] [INFO] webApp - {
+  privateKey: '0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80'
+}
+[2024-09-14T10:47:37.437] [INFO] webApp - did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+[2024-09-14T10:47:41.647] [INFO] webApp - [registerDID] txnHash - "{\"@context\":\"https://w3id.org/did/v1\",\"id\":\"did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\"verificationMethod\":[{\"id\":\"did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266#key-1\",\"type\":\"EcdsaSecp256k1VerificationKey2019\",\"controller\":\"did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\"publicKeyBase58\":\"7Lnm1ez9t4ynPHp7MoG9Lwidg8VKwQLUrUttfvHGXz8LddMc8tQrUUDFukUgpQZRVm4xx9KGyAU8E6v3tBpAHH3oEyyaC\"}]}\u0000\u0000\u0000\u0000" 
+
+
+
+[2024-09-14T11:23:16.002] [INFO] webApp - {
+  privateKey: '0x7c852118294e51e653712a81e05800f419141751be58f605c371e15141b007a6'
+}
+[2024-09-14T11:23:16.043] [INFO] webApp - did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906
+[2024-09-14T11:23:16.064] [INFO] webApp - Private key and DID uri do not match!
+[2024-09-14T15:16:18.287] [INFO] webApp - {
+  privateKey: '0x7c852118294e51e653712a81e05800f419141751be58f605c371e15141b007a6'
+}
+[2024-09-14T15:16:18.334] [INFO] webApp - did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906
+[2024-09-14T15:16:18.353] [INFO] webApp - Private key and DID uri do not match!
+[2024-09-14T15:17:10.061] [INFO] webApp - {
+  privateKey: '0x7c852118294e51e653712a81e05800f419141751be58f605c371e15141b007a6'
+}
+[2024-09-14T15:17:10.106] [INFO] webApp - did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906
+[2024-09-14T15:17:10.132] [INFO] webApp - Private key and DID uri do not match!
+[2024-09-14T15:42:42.893] [INFO] webApp - {
+  privateKey: '0x7c852118294e51e653712a81e05800f419141751be58f605c371e15141b007a6'
+}
+[2024-09-14T15:42:42.958] [INFO] webApp - did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906
+[2024-09-14T15:42:42.977] [INFO] webApp - Private key and DID uri do not match!
+[2024-09-14T15:43:53.632] [INFO] webApp - {
+  privateKey: '0x7c852118294e51e653712a81e05800f419141751be58f605c371e15141b007a6'
+}
+[2024-09-14T15:43:53.693] [INFO] webApp - did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906
+[2024-09-14T15:43:53.713] [INFO] webApp - Private key and DID uri do not match!
+[2024-09-14T15:44:14.843] [INFO] webApp - [registerDID] txnHash - "{\"@context\":\"https://w3id.org/did/v1\",\"id\":\"did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\"verificationMethod\":[{\"id\":\"did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266#key-1\",\"type\":\"EcdsaSecp256k1VerificationKey2019\",\"controller\":\"did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\",\"publicKeyBase58\":\"7Lnm1ez9t4ynPHp7MoG9Lwidg8VKwQLUrUttfvHGXz8LddMc8tQrUUDFukUgpQZRVm4xx9KGyAU8E6v3tBpAHH3oEyyaC\"}]}\u0000\u0000\u0000\u0000" 
+
+
+
+[2024-09-14T15:44:26.524] [INFO] webApp - {
+  privateKey: '0x7c852118294e51e653712a81e05800f419141751be58f605c371e15141b007a6'
+}
+[2024-09-14T15:44:26.568] [INFO] webApp - did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906
+[2024-09-14T15:44:26.589] [INFO] webApp - Private key and DID uri do not match!
+[2024-09-14T15:45:23.364] [INFO] webApp - {
+  privateKey: '0x7c852118294e51e653712a81e05800f419141751be58f605c371e15141b007a6'
+}
+[2024-09-14T15:45:23.412] [INFO] webApp - did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906
+[2024-09-14T15:45:23.431] [INFO] webApp - Private key and DID uri do not match!
+[2024-09-14T15:48:03.256] [INFO] webApp - {
+  privateKey: '0x7c852118294e51e653712a81e05800f419141751be58f605c371e15141b007a6'
+}
+[2024-09-14T15:48:03.297] [INFO] webApp - did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906
+[2024-09-14T15:48:04.439] [INFO] webApp - Private key and DID uri do not match!
+[2024-09-14T15:49:39.752] [INFO] webApp - {
+  privateKey: '0x7c852118294e51e653712a81e05800f419141751be58f605c371e15141b007a6'
+}
+[2024-09-14T15:49:39.791] [INFO] webApp - did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906
+[2024-09-14T15:49:40.940] [INFO] webApp - Private key and DID uri do not match!
+[2024-09-14T15:52:19.232] [INFO] webApp - {
+  privateKey: '0x7c852118294e51e653712a81e05800f419141751be58f605c371e15141b007a6'
+}
+[2024-09-14T15:52:19.276] [INFO] webApp - did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906
+[2024-09-14T15:52:20.444] [INFO] webApp - Private key and DID uri do not match!
+[2024-09-14T15:52:51.413] [INFO] webApp - {
+  privateKey: '0x7c852118294e51e653712a81e05800f419141751be58f605c371e15141b007a6'
+}
+[2024-09-14T15:52:51.455] [INFO] webApp - did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906
+[2024-09-14T15:52:52.652] [INFO] webApp - Private key and DID uri do not match!
+[2024-09-14T15:53:30.920] [INFO] webApp - {
+  privateKey: '0x7c852118294e51e653712a81e05800f419141751be58f605c371e15141b007a6'
+}
+[2024-09-14T15:53:30.959] [INFO] webApp - did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906
+[2024-09-14T15:53:32.112] [INFO] webApp - Private key and DID uri do not match!
+[2024-09-14T15:55:11.270] [INFO] webApp - {
+  privateKey: '0x7c852118294e51e653712a81e05800f419141751be58f605c371e15141b007a6'
+}
+[2024-09-14T15:55:11.315] [INFO] webApp - did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906
+[2024-09-14T15:55:12.198] [INFO] webApp - Private key and DID uri do not match!
+[2024-09-14T15:55:49.712] [INFO] webApp - {
+  privateKey: '0x7c852118294e51e653712a81e05800f419141751be58f605c371e15141b007a6'
+}
+[2024-09-14T15:55:49.754] [INFO] webApp - did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906
+[2024-09-14T15:55:51.902] [INFO] webApp - {
+  privateKey: '0x7c852118294e51e653712a81e05800f419141751be58f605c371e15141b007a6'
+}
+[2024-09-14T15:55:51.905] [INFO] webApp - did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906
+[2024-09-14T15:55:55.220] [INFO] webApp - [registerDID] txnHash - "{\"@context\":\"https://w3id.org/did/v1\",\"id\":\"did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906\",\"verificationMethod\":[{\"id\":\"did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906#key-1\",\"type\":\"EcdsaSecp256k1VerificationKey2019\",\"controller\":\"did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906\",\"publicKeyBase58\":\"7Lnm1ez9t4ynPHp7MoG9Lwidg8VKwQLUrUttfvHGXz8LddMc8tQrUUDFukUgpQZRVm4xx9KGyAU8E6v3tBpAHH3oEyyaC\"}]}\u0000\u0000\u0000\u0000" 
+
+
+
+[2024-09-14T15:55:57.507] [INFO] webApp - [registerDID] txnHash - "{\"@context\":\"https://w3id.org/did/v1\",\"id\":\"did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906\",\"verificationMethod\":[{\"id\":\"did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906#key-1\",\"type\":\"EcdsaSecp256k1VerificationKey2019\",\"controller\":\"did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906\",\"publicKeyBase58\":\"7Lnm1ez9t4ynPHp7MoG9Lwidg8VKwQLUrUttfvHGXz8LddMc8tQrUUDFukUgpQZRVm4xx9KGyAU8E6v3tBpAHH3oEyyaC\"}]}\u0000\u0000\u0000\u0000" 
+
+
+
+[2024-09-14T15:56:38.695] [INFO] webApp - {
+  privateKey: '0x7c852118294e51e653712a81e05800f419141751be58f605c371e15141b007a6'
+}
+[2024-09-14T15:56:38.705] [INFO] webApp - did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906
+[2024-09-14T15:56:45.050] [INFO] webApp - [registerDID] txnHash - "{\"@context\":\"https://w3id.org/did/v1\",\"id\":\"did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906\",\"verificationMethod\":[{\"id\":\"did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906#key-1\",\"type\":\"EcdsaSecp256k1VerificationKey2019\",\"controller\":\"did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906\",\"publicKeyBase58\":\"7Lnm1ez9t4ynPHp7MoG9Lwidg8VKwQLUrUttfvHGXz8LddMc8tQrUUDFukUgpQZRVm4xx9KGyAU8E6v3tBpAHH3oEyyaC\"}]}\u0000\u0000\u0000\u0000" 
+
+
+

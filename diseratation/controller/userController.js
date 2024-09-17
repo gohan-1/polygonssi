@@ -3,8 +3,7 @@ const { User } = require("../models/user");
 
 
 const register = async(details)=>{
-    console.log(details)
-    console.log('---------------------------------------------')
+   
     const newUser = new User({
         username: details.username,
         password: details.password, // Remember to hash the password before saving

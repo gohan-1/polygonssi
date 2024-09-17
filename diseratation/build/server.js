@@ -49,7 +49,7 @@ connectToDatabase().then((db) => {
         try {
             const user = yield db.collection('users').findOne({ _id: new mongodb_1.ObjectId(userID) });
            
-            console.log(user);
+        
             done(user);
         }
         catch (error) {

@@ -49,23 +49,7 @@ exports.createVerifiableCred = async ( credentialSubject, vcParams) => {
 
 exports.vcToHash = async (verifiableCredential) => {
     try {
-        // const messageDigest = {
-        //     id: verifiableCredential.credentialSubject.userDid,
-        //     // type: verifiableCredential.type,
-        //     // issuer: verifiableCredential.issuer,
-        //     // issuanceDate: verifiableCredential.issuanceDate,
-        // };
-        // verifiableCredential.credentialSubject.forEach((item)=>{
-        //     forEach(item,(value,key)=>{
-        //         if(key === 'id'){
-        //             messageDigest.did = value;
-        //         }
-        //         else{
-        //             messageDigest[key]=value;
-        //         }
-        //     });
-        // });
-        console.log(JSON.stringify(verifiableCredential))
+        
         const credentialHash = await util.hashWithSHA256(JSON.stringify(verifiableCredential));
         return await util.encodeBase58(credentialHash);
     } catch (error) {

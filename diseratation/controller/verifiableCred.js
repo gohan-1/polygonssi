@@ -6,6 +6,9 @@ const { computeAddress } = require("@ethersproject/transactions");
 const { computePublicKey } = require("@ethersproject/signing-key");
 const {loggerWeb} = require('../config/logger');
 const bs58 = require("bs58");
+const crypto = require('crypto');
+const fs = require('fs');
+const path = require('path');
 
 //const {createVC} = require("../sdk/index")
 const sdk = require('../sdk');
@@ -37,8 +40,26 @@ const createVerifiableCred = async (data, vcParams) => {
 
 
     const vc = await sdk.createVC(credentialSubject, vcParams)
+  
+
+    // Read the private key from the file
+    const privateKeyPath = path.join(__dirname, '../privateKey.pem');
+    const privateKey = fs.readFileSync(privateKeyPath, 'utf8');
+
+    // Create the sign object and sign the data
+    const sign = crypto.createSign('SHA256');
+    console.log('---------------------------------------------------sadas------------')
+    console.log(credentialSubject.userDid)
+    sign.update(credentialSubject.userDid);
+    sign.end();
+
+    // Sign the data using the private key
+    const signature = sign.sign(privateKey).toString('base64');
+
+    // Send back the data and signature
+    vc['sign'] = signature
     const credentialHash = await sdk.createVCHash(vc);
-    console.log(credentialHash)
+   
 
 
     // var hashStr = '';
@@ -48,7 +69,7 @@ const createVerifiableCred = async (data, vcParams) => {
     //   hashStr += String.fromCharCode(parseInt(credentialHash1.substr(i, 2), 16));
     // }
     // console.log(hashStr, "this is hash string")
-    console.log(vc)
+    
 
     return [  vc , credentialHash]
 
@@ -74,22 +95,20 @@ const createVc = async (did,credentialHash,
   
       const didMethodCheck= await didUriValidation.polygonDidMatch(did);
       const didWithTestnet= await didUriValidation.splitPolygonDid(did);
-      console.log(1)
+ 
       if (didMethodCheck) {
-        console.log(2)
+  
         const kp = await createKeyPair(privateKey);
-        console.log(3)
+   
         const networkCheckWithUrl= await didUriValidation.networkMatch(
           did,
           url,
           process.env.CONTACT_ADDRESS
         );
-        console.log(3.5)
-         console.log(did &&
-          didWithTestnet === "testnet" &&
-          did.split(":")[3] === kp.address)  
+     
+        
         if (did && credentialHash) {
-          console.log(4)
+       
           const registry =
             await registryContractInitialization.instanceCreation(
               privateKey,
@@ -100,9 +119,9 @@ const createVc = async (did,credentialHash,
           const didAddress =
             didWithTestnet === "testnet" ? did.split(":")[3] : didWithTestnet;
             //yourNumber = parseInt(hexString, 16);
-            console.log('didadress')
+            console.log('didadress---------------------------------------------')
             console.log(didAddress)
-            console.log('did')
+            console.log('did----------------------')
             console.log(did)
             let value_Hash= await registry.storeVcHash(didAddress, did,credentialHash.toString());
             console.log(value_Hash);
@@ -148,10 +167,7 @@ const createVc = async (did,credentialHash,
         );
   
         if (
-          (did &&
-            didWithTestnet === "testnet" &&
-            did.split(":")[3] === kp.address) ||
-          (did && didWithTestnet === kp.address)
+          (did)
         ) {
           const registry =
             await registryContractInitialization.instanceCreation(
@@ -166,14 +182,7 @@ const createVc = async (did,credentialHash,
             console.log('did')
             console.log(did)
           let txnHash= await registry.getVcDetails(didAddress,did)
-            
-              // .then((resValue: any) => {
-              //   return resValue;
-              // });
-  
-          //   logger.debug(
-          //     `[updateDidDoc] txnHash - ${JSON.stringify(txnHash)} \n\n\n`
-          //   );
+              
           console.log(txnHash)
   
             resolve(BaseResponse.from(txnHash, "Update DID document successfully"));

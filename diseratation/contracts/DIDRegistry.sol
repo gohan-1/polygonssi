@@ -14,11 +14,13 @@ contract DidRegistry {
     struct vcDetails{
         string vcHash;
     }
+    uint256 public constant FINALITY_BLOCKS = 12;
     struct  PolyDID  {
         address controller;
         uint256 created;
         uint256 updated;
         string did_doc;
+          bool isFinalized;
     } 
     modifier onlyController(address _id) {
         require(
@@ -26,6 +28,7 @@ contract DidRegistry {
         );
         _;
     }
+
     mapping(address => mapping(string => vcDetails)) vcStore;  
     mapping(address => PolyDID) public did;
     mapping(uint8 => string) public test;
@@ -36,6 +39,7 @@ contract DidRegistry {
     event DidDeleted(address id);
     event TransferOwnership(address newOwner);
     event vcHashStored(address id,string did);
+    event DidFinalized(address id);
 
     constructor (){
         owner = msg.sender;
@@ -46,6 +50,29 @@ contract DidRegistry {
         require( msg.sender == owner, "message sender is not the owner");
         _;
     }
+
+ /**
+     *@dev Check if a DID is finalized
+     *@param _id - Address of the DID
+     */
+    function isDIDFinalized(address _id) public view returns (bool) {
+        return did[_id].isFinalized;
+    }
+    /**
+     *@dev Finalize the DID after a set number of blocks
+     *@param _id - Address of the DID
+     */
+    function finalizeDID(address _id) public onlyController(_id) {
+        require(!did[_id].isFinalized, "DID is already finalized");
+        require(
+            block.number >= did[_id].created + FINALITY_BLOCKS,
+            "Not enough blocks have passed for finality"
+        );
+        did[_id].isFinalized = true;
+        emit DidFinalized(_id);
+    }
+
+   
 
     function transferOwnership(address newOwner)public onlyOwner() returns (string memory){
         if(owner != newOwner){

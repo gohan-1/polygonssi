@@ -14,11 +14,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "hardhat": "^2.22.7"
+    "hardhat": "^2.22.7",
+    "jshint": "^2.13.6"
   },
   "dependencies": {
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",
     "aws-sdk": "^2.1667.0",
+    "crypto": "^1.0.1",
     "crypto-js": "^4.2.0",
     "joi": "^17.13.3",
     "log4js": "^6.9.1",

@@ -1,0 +1,90 @@
+[2024-09-16T11:52:59.100] [INFO] webApp - {
+  privateKey: '0x7c852118294e51e653712a81e05800f419141751be58f605c371e15141b007a6'
+}
+[2024-09-16T11:52:59.151] [INFO] webApp - did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906
+[2024-09-16T11:53:01.044] [INFO] webApp - [registerDID] txnHash - "{\"@context\":\"https://w3id.org/did/v1\",\"id\":\"did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906\",\"verificationMethod\":[{\"id\":\"did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906#key-1\",\"type\":\"EcdsaSecp256k1VerificationKey2019\",\"controller\":\"did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906\",\"publicKeyBase58\":\"7Lnm1ez9t4ynPHp7MoG9Lwidg8VKwQLUrUttfvHGXz8LddMc8tQrUUDFukUgpQZRVm4xx9KGyAU8E6v3tBpAHH3oEyyaC\"}]}\u0000\u0000\u0000\u0000" 
+
+
+
+[2024-09-16T11:53:43.005] [INFO] webApp - Credential Subject Details: {"schemaName":"universityCert","isEncrypted":true,"dependantVerifiableCredential":[],"credentialSubject":{"userName":"Vishnuskrishnan","firstName":"vishnu","lastName":"Shyni krishnan","email":"vishnuskris@gmail.com","degree":"masters","dateOfBirth":"2024-08-30","userDid":"did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906","grade":"A"}}
+[2024-09-16T11:57:05.453] [INFO] webApp - {
+  privateKey: '0x7c852118294e51e653712a81e05800f419141751be58f605c371e15141b007a6'
+}
+[2024-09-16T11:57:05.497] [INFO] webApp - did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906
+[2024-09-16T12:12:10.201] [INFO] webApp - [registerDID] txnHash - "{\"@context\":\"https://w3id.org/did/v1\",\"id\":\"did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906\",\"verificationMethod\":[{\"id\":\"did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906#key-1\",\"type\":\"EcdsaSecp256k1VerificationKey2019\",\"controller\":\"did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906\",\"publicKeyBase58\":\"7Lnm1ez9t4ynPHp7MoG9Lwidg8VKwQLUrUttfvHGXz8LddMc8tQrUUDFukUgpQZRVm4xx9KGyAU8E6v3tBpAHH3oEyyaC\"}]}\u0000\u0000\u0000\u0000" 
+
+
+
+[2024-09-16T12:13:19.365] [INFO] webApp - Credential Subject Details: {"schemaName":"universityCert","isEncrypted":true,"dependantVerifiableCredential":[],"credentialSubject":{"userName":"Vishnuskrishnan","firstName":"Vishnu","lastName":"Shyni krishnan","email":"gohanthe@gmail.com","degree":"masters","dateOfBirth":"2024-09-16","userDid":"did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906","grade":"A"}}
+[2024-09-16T12:13:42.354] [INFO] webApp - Credential Subject Details: {"schemaName":"universityCert1","isEncrypted":true,"dependantVerifiableCredential":[],"credentialSubject":{"userName":"Vishnuskrishnan","firstName":"Vishnu","lastName":"Shyni krishnan","email":"gohanthe@gmail.com","degree":"masters","dateOfBirth":"2024-09-16","userDid":"did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906","grade":"A"}}
+[2024-09-16T12:14:11.710] [INFO] webApp - Credential Subject Details: {"schemaName":"universityCert132","isEncrypted":true,"dependantVerifiableCredential":[],"credentialSubject":{"userName":"Vishnuskrishnan","firstName":"Vishnu","lastName":"Shyni krishnan","email":"gohanthe@gmail.com","degree":"masters","dateOfBirth":"2024-09-16","userDid":"did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906","grade":"A"}}
+[2024-09-16T12:14:48.985] [INFO] webApp - Credential Subject Details: {"schemaName":"universityCert132","isEncrypted":true,"dependantVerifiableCredential":[],"credentialSubject":{"userName":"Vishnuskrishnan","firstName":"Vishnu","lastName":"Shyni krishnan","email":"gohanthe@gmail.com","degree":"masters","dateOfBirth":"2024-09-16","userDid":"did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906","grade":"A"}}
+[2024-09-16T12:14:57.874] [INFO] webApp - Credential Subject Details: {"schemaName":"universityCert132","isEncrypted":true,"dependantVerifiableCredential":[],"credentialSubject":{"userName":"Vishnuskrishnan","firstName":"Vishnu","lastName":"Shyni krishnan","email":"gohanthe@gmail.com","degree":"masters","dateOfBirth":"2024-09-16","userDid":"did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906","grade":"A"}}
+[2024-09-16T12:15:24.841] [INFO] webApp - Credential Subject Details: {"schemaName":"universityCert132","isEncrypted":true,"dependantVerifiableCredential":[],"credentialSubject":{"userName":"Vishnuskrishnan","firstName":"Vishnu","lastName":"Shyni krishnan","email":"gohanthe@gmail.com","degree":"masters","dateOfBirth":"2024-09-16","userDid":"did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906","grade":"A"}}
+[2024-09-16T12:15:25.918] [INFO] webApp - Credential Subject Details: {"schemaName":"universityCert132","isEncrypted":true,"dependantVerifiableCredential":[],"credentialSubject":{"userName":"Vishnuskrishnan","firstName":"Vishnu","lastName":"Shyni krishnan","email":"gohanthe@gmail.com","degree":"masters","dateOfBirth":"2024-09-16","userDid":"did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906","grade":"A"}}
+[2024-09-16T12:25:06.562] [INFO] webApp - {
+  privateKey: '0x7c852118294e51e653712a81e05800f419141751be58f605c371e15141b007a6'
+}
+[2024-09-16T12:25:06.612] [INFO] webApp - did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906
+[2024-09-16T12:25:12.835] [INFO] webApp - {
+  privateKey: '0x7c852118294e51e653712a81e05800f419141751be58f605c371e15141b007a6'
+}
+[2024-09-16T12:25:12.843] [INFO] webApp - did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906
+[2024-09-16T12:25:15.685] [INFO] webApp - [registerDID] txnHash - "{\"@context\":\"https://w3id.org/did/v1\",\"id\":\"did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906\",\"verificationMethod\":[{\"id\":\"did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906#key-1\",\"type\":\"EcdsaSecp256k1VerificationKey2019\",\"controller\":\"did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906\",\"publicKeyBase58\":\"7Lnm1ez9t4ynPHp7MoG9Lwidg8VKwQLUrUttfvHGXz8LddMc8tQrUUDFukUgpQZRVm4xx9KGyAU8E6v3tBpAHH3oEyyaC\"}]}\u0000\u0000\u0000\u0000" 
+
+
+
+[2024-09-16T12:25:18.616] [INFO] webApp - [registerDID] txnHash - "{\"@context\":\"https://w3id.org/did/v1\",\"id\":\"did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906\",\"verificationMethod\":[{\"id\":\"did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906#key-1\",\"type\":\"EcdsaSecp256k1VerificationKey2019\",\"controller\":\"did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906\",\"publicKeyBase58\":\"7Lnm1ez9t4ynPHp7MoG9Lwidg8VKwQLUrUttfvHGXz8LddMc8tQrUUDFukUgpQZRVm4xx9KGyAU8E6v3tBpAHH3oEyyaC\"}]}\u0000\u0000\u0000\u0000" 
+
+
+
+[2024-09-16T12:27:04.441] [INFO] webApp - Credential Subject Details: {"schemaName":"universityCert1","isEncrypted":true,"dependantVerifiableCredential":[],"credentialSubject":{"userName":"Vishnuskrishnan","firstName":"Vishnu","lastName":"Shyni krishnan","email":"gohanthe@gmail.com","degree":"masters","dateOfBirth":"2024-09-04","userDid":"did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906","grade":"A"}}
+[2024-09-16T12:27:40.893] [INFO] webApp - Credential Subject Details: {"schemaName":"universityCert1","isEncrypted":true,"dependantVerifiableCredential":[],"credentialSubject":{"userName":"Vishnuskrishnan","firstName":"Vishnu","lastName":"Shyni krishnan","email":"gohanthe@gmail.com","degree":"masters","dateOfBirth":"2024-09-04","userDid":"did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906","grade":"A"}}
+[2024-09-16T12:29:31.785] [INFO] webApp - Credential Subject Details: {"schemaName":"universityCert1","isEncrypted":true,"dependantVerifiableCredential":[],"credentialSubject":{"userName":"Vishnuskrishnan","firstName":"Vishnu","lastName":"Shyni krishnan","email":"gohanthe@gmail.com","degree":"masters","dateOfBirth":"2024-09-04","userDid":"did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906","grade":"A"}}
+[2024-09-16T12:30:26.682] [INFO] webApp - {
+  privateKey: '0x7c852118294e51e653712a81e05800f419141751be58f605c371e15141b007a6'
+}
+[2024-09-16T12:30:26.736] [INFO] webApp - did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906
+[2024-09-16T12:30:32.582] [INFO] webApp - [registerDID] txnHash - "{\"@context\":\"https://w3id.org/did/v1\",\"id\":\"did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906\",\"verificationMethod\":[{\"id\":\"did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906#key-1\",\"type\":\"EcdsaSecp256k1VerificationKey2019\",\"controller\":\"did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906\",\"publicKeyBase58\":\"7Lnm1ez9t4ynPHp7MoG9Lwidg8VKwQLUrUttfvHGXz8LddMc8tQrUUDFukUgpQZRVm4xx9KGyAU8E6v3tBpAHH3oEyyaC\"}]}\u0000\u0000\u0000\u0000" 
+
+
+
+[2024-09-16T12:30:53.107] [INFO] webApp - Credential Subject Details: {"schemaName":"universityCert1","isEncrypted":true,"dependantVerifiableCredential":[],"credentialSubject":{"userName":"Vishnuskrishnan","firstName":"Vishnu","lastName":"Shynui Krishnan","email":"vishnuskris@gmail.com","degree":"masters","dateOfBirth":"2024-09-03","userDid":"did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906","grade":"A"}}
+[2024-09-16T12:31:19.673] [INFO] webApp - Credential Subject Details: {"schemaName":"universityCert1","isEncrypted":true,"dependantVerifiableCredential":[],"credentialSubject":{"userName":"Vishnuskrishnan","firstName":"Vishnu","lastName":"Shynui Krishnan","email":"vishnuskris@gmail.com","degree":"masters","dateOfBirth":"2024-09-03","userDid":"did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906","grade":"A"}}
+[2024-09-16T12:32:36.334] [INFO] webApp - {
+  privateKey: '0x7c852118294e51e653712a81e05800f419141751be58f605c371e15141b007a6'
+}
+[2024-09-16T12:32:36.343] [INFO] webApp - did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906
+[2024-09-16T12:32:42.872] [INFO] webApp - [registerDID] txnHash - "{\"@context\":\"https://w3id.org/did/v1\",\"id\":\"did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906\",\"verificationMethod\":[{\"id\":\"did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906#key-1\",\"type\":\"EcdsaSecp256k1VerificationKey2019\",\"controller\":\"did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906\",\"publicKeyBase58\":\"7Lnm1ez9t4ynPHp7MoG9Lwidg8VKwQLUrUttfvHGXz8LddMc8tQrUUDFukUgpQZRVm4xx9KGyAU8E6v3tBpAHH3oEyyaC\"}]}\u0000\u0000\u0000\u0000" 
+
+
+
+[2024-09-16T12:33:04.319] [INFO] webApp - Credential Subject Details: {"schemaName":"universityCert1","isEncrypted":true,"dependantVerifiableCredential":[],"credentialSubject":{"userName":"Vishnuskrishnan","firstName":"Vishnu","lastName":"krishnan","email":"gohanthe@gmail.com","degree":"masters","dateOfBirth":"2024-09-03","userDid":"did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906","grade":"A"}}
+[2024-09-16T12:33:55.572] [INFO] webApp - Credential Subject Details: {"schemaName":"universityCert1","isEncrypted":true,"dependantVerifiableCredential":[],"credentialSubject":{"userName":"Vishnuskrishnan","firstName":"vishnu","lastName":"Shynui Krishnan","email":"vishnuskris@gmail.com","degree":"masters","dateOfBirth":"2024-09-04","userDid":"Vishnu","grade":"A"}}
+[2024-09-16T12:34:47.416] [INFO] webApp - {
+  privateKey: '0x7c852118294e51e653712a81e05800f419141751be58f605c371e15141b007a6'
+}
+[2024-09-16T12:34:47.426] [INFO] webApp - did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906
+[2024-09-16T12:34:52.669] [INFO] webApp - [registerDID] txnHash - "{\"@context\":\"https://w3id.org/did/v1\",\"id\":\"did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906\",\"verificationMethod\":[{\"id\":\"did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906#key-1\",\"type\":\"EcdsaSecp256k1VerificationKey2019\",\"controller\":\"did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906\",\"publicKeyBase58\":\"7Lnm1ez9t4ynPHp7MoG9Lwidg8VKwQLUrUttfvHGXz8LddMc8tQrUUDFukUgpQZRVm4xx9KGyAU8E6v3tBpAHH3oEyyaC\"}]}\u0000\u0000\u0000\u0000" 
+
+
+
+[2024-09-16T12:37:01.825] [INFO] webApp - Credential Subject Details: {"schemaName":"universityCert1","isEncrypted":true,"dependantVerifiableCredential":[],"credentialSubject":{"userName":"Vishnuskrishnan","firstName":"Vishnu","lastName":"krishnan","email":"gohanthe@gmail.com","degree":"masters","dateOfBirth":"2024-09-14","userDid":"Vishnu","grade":"A"}}
+[2024-09-16T12:38:32.921] [INFO] webApp - {
+  privateKey: '0x7c852118294e51e653712a81e05800f419141751be58f605c371e15141b007a6'
+}
+[2024-09-16T12:38:32.928] [INFO] webApp - did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906
+[2024-09-16T12:38:38.632] [INFO] webApp - [registerDID] txnHash - "{\"@context\":\"https://w3id.org/did/v1\",\"id\":\"did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906\",\"verificationMethod\":[{\"id\":\"did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906#key-1\",\"type\":\"EcdsaSecp256k1VerificationKey2019\",\"controller\":\"did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906\",\"publicKeyBase58\":\"7Lnm1ez9t4ynPHp7MoG9Lwidg8VKwQLUrUttfvHGXz8LddMc8tQrUUDFukUgpQZRVm4xx9KGyAU8E6v3tBpAHH3oEyyaC\"}]}\u0000\u0000\u0000\u0000" 
+
+
+
+[2024-09-16T12:38:49.839] [INFO] webApp - Credential Subject Details: {"schemaName":"universityCert1","isEncrypted":true,"dependantVerifiableCredential":[],"credentialSubject":{"userName":"Vishnuskrishnan","firstName":"Vishnu","lastName":"krishnan","email":"gohanthe@gmail.com","degree":"masters","dateOfBirth":"2024-09-04","userDid":"Vishnu","grade":"A"}}
+[2024-09-16T12:56:11.396] [INFO] webApp - {
+  privateKey: '0x7c852118294e51e653712a81e05800f419141751be58f605c371e15141b007a6'
+}
+[2024-09-16T12:56:11.402] [INFO] webApp - did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906
+[2024-09-16T12:56:16.750] [INFO] webApp - [registerDID] txnHash - "{\"@context\":\"https://w3id.org/did/v1\",\"id\":\"did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906\",\"verificationMethod\":[{\"id\":\"did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906#key-1\",\"type\":\"EcdsaSecp256k1VerificationKey2019\",\"controller\":\"did:polygon:testnet:0x90F79bf6EB2c4f870365E785982E1f101E93b906\",\"publicKeyBase58\":\"7Lnm1ez9t4ynPHp7MoG9Lwidg8VKwQLUrUttfvHGXz8LddMc8tQrUUDFukUgpQZRVm4xx9KGyAU8E6v3tBpAHH3oEyyaC\"}]}\u0000\u0000\u0000\u0000" 
+
+
+
+[2024-09-16T12:56:26.543] [INFO] webApp - Credential Subject Details: {"schemaName":"universityCert1","isEncrypted":true,"dependantVerifiableCredential":[],"credentialSubject":{"userName":"Vishnuskrishnan","firstName":"vishnu","lastName":"Shyni krishnan","email":"vishnuskris@gmail.com","degree":"masters","dateOfBirth":"2024-09-19","userDid":"Vishnu","grade":"A"}}

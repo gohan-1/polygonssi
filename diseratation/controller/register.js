@@ -33,6 +33,7 @@ exports.createDID= async (network,privateKey=null)=>{
     
    
         const { address, publicKeyBase58 } = await createKeyPair(_privateKey);
+    
         if (network === "testnet") {
           did = `did:polygon:testnet:${address}`;
         } else if (network === "mainnet") {
@@ -44,9 +45,10 @@ exports.createDID= async (network,privateKey=null)=>{
         }
     
         loggerWeb.info(did)
+        console.log(did)
         // loggerDebug.info("[createDID] address - ".concat(JSON.stringify(address), " \n\n\n"));
         // loggerDebug.info("[createDID] did - ".concat(JSON.stringify(did), " \n\n\n"));
-    
+        
         return(
           { address, publicKeyBase58, _privateKey, did });
       } catch (error) {
@@ -76,11 +78,12 @@ async function wrapDidDocument(
 async function createKeyPair(privateKey) {
     try {
       const publicKey= computePublicKey(privateKey, true);
-  
+     
       const bufferPublicKey = Buffer.from(publicKey);
       const publicKeyBase58= bs58.encode(bufferPublicKey);
   
       const address= computeAddress(privateKey);
+   
   
       return { address, publicKeyBase58 };
     } catch (error) {
@@ -109,7 +112,7 @@ exports.getDID = async (
   
       if (didMethodCheck) {
         const kp = await createKeyPair(privateKey);
-        
+     
         const networkCheckWithUrl= await didUriValidation.networkMatch(
           did,
           url,
@@ -173,18 +176,16 @@ exports.getDID = async (
   
       if (didMethodCheck) {
         const kp = await createKeyPair(privateKey);
-        
+        console.log('kp')
+        console.log(did)
         const networkCheckWithUrl= await didUriValidation.networkMatch(
           did,
           url,
           contractAddress
         );
-
+console.log(kp.address)
         if (
-          (did &&
-            didWithTestnet === "testnet" &&
-            did.split(":")[3] === kp.address) ||
-          (did && didWithTestnet === kp.address)
+          (did )
         ) {
           
           const registry =
@@ -193,6 +194,8 @@ exports.getDID = async (
               networkCheckWithUrl.url,
               process.env.CONTACT_ADDRESS
             );
+
+            console.log(registry)
           const didAddress =
             didWithTestnet === "testnet" ? did.split(":")[3] : didWithTestnet;
           console.log(didAddress)
