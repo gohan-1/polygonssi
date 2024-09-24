@@ -1,61 +1,64 @@
 const { ethers } = require("hardhat");
 
 async function main() {
-   const [owner, otherAccount] = await ethers.getSigners();
-    const DidRegistryFactory = await ethers.getContractFactory('DidRegistry');
-    
-    const didRegistry1 = await DidRegistryFactory.deploy();
+  const [owner, otherAccount] = await ethers.getSigners();
+  const DidRegistryFactory = await ethers.getContractFactory("DidRegistry");
 
+  const didRegistry1 = await DidRegistryFactory.deploy();
 
-    // Parameters for creating DID
-    const didDoc = "Example DID Document";
-    const numTransactions = 100; // Number of transactions to simulate
+  // Parameters for creating DID
+  const didDoc = "Example DID Document";
+  const numTransactions = 100; // Number of transactions to simulate
 
-    // Measure start time
-    const startTime = Date.now();
+  // Measure start time
+  const startTime = Date.now();
 
-    let totalLatency = 0;
+  let totalLatency = 0;
 
-    for (let i = 0; i < numTransactions; i++) {
-        const newAddress = ethers.Wallet.createRandom().address; // Generate a random address for each DID
-        
-        // Measure the time of transaction submission
-        const txStart = Date.now();
+  for (let i = 0; i < numTransactions; i++) {
+    const newAddress = ethers.Wallet.createRandom().address; // Generate a random address for each DID
 
-        // Submit transaction
-        const tx = await didRegistry1.createDID(newAddress, didDoc);
+    // Measure the time of transaction submission
+    const txStart = Date.now();
 
-        // Wait for the transaction to be mined
-        const receipt = await tx.wait();
+    // Submit transaction
+    const tx = await didRegistry1.createDID(newAddress, didDoc);
 
-        // Get the block in which the transaction was included
-        const block = await ethers.provider.getBlock(receipt.blockNumber);
+    // Wait for the transaction to be mined
+    const receipt = await tx.wait();
 
-        // Calculate latency
-        const txEnd = block.timestamp * 1000; // Convert block timestamp to milliseconds
-        const latency = txEnd - txStart;
-        totalLatency += latency;
+    // Get the block in which the transaction was included
+    const block = await ethers.provider.getBlock(receipt.blockNumber);
 
-        console.log(`Transaction ${i + 1} sent: DID created for address ${newAddress}`);
-        console.log(`Latency for transaction ${i + 1}: ${latency} ms`);
-    }
+    // Calculate latency
+    const txEnd = block.timestamp * 1000; // Convert block timestamp to milliseconds
+    const latency = txEnd - txStart;
+    totalLatency += latency;
 
-    // Measure end time
-    const endTime = Date.now();
+    console.log(
+      `Transaction ${i + 1} sent: DID created for address ${newAddress}`,
+    );
+    console.log(`Latency for transaction ${i + 1}: ${latency} ms`);
+  }
 
-    // Calculate TPS
-    const totalTimeInSeconds = (endTime - startTime) / 1000;
-    const tps = numTransactions / totalTimeInSeconds;
+  // Measure end time
+  const endTime = Date.now();
 
-    // Calculate average latency
-    const avgLatency = totalLatency / numTransactions;
+  // Calculate TPS
+  const totalTimeInSeconds = (endTime - startTime) / 1000;
+  const tps = numTransactions / totalTimeInSeconds;
 
-    console.log(`Processed ${numTransactions} transactions in ${totalTimeInSeconds} seconds`);
-    console.log(`TPS: ${tps}`);
-    console.log(`Average Latency: ${avgLatency / 1000} seconds`);
+  // Calculate average latency
+  const avgLatency = totalLatency / numTransactions;
+
+  console.log(
+    `Processed ${numTransactions} transactions in ${totalTimeInSeconds} seconds`,
+  );
+  console.log(`TPS: ${tps}`);
+  console.log(`Average Latency: ${avgLatency / 1000} seconds`);
 }
 
 main().catch((error) => {
-    console.error(error);
-    process.exit(1);
+  console.error(error);
+  process.exit(1);
 });

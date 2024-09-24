@@ -21,13 +21,13 @@ paths:
           required: false
           description: Private key for creating the DID. Defaults to the PRIVATEKEY from environment variables.
       responses:
-        '200':
+        "200":
           description: Successfully created DID
           content:
             application/json:
               schema:
                 type: string
-        '500':
+        "500":
           description: Server error
 
   /api/issuer/registerDid:
@@ -52,13 +52,13 @@ paths:
                   type: string
                   example: did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
       responses:
-        '200':
+        "200":
           description: Successfully registered DID
           content:
             application/json:
               schema:
                 type: string
-        '500':
+        "500":
           description: Server error
 
   /api/issuer/getDID:
@@ -83,13 +83,13 @@ paths:
                   type: string
                   example: did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
       responses:
-        '200':
+        "200":
           description: Successfully retrieved DID
           content:
             application/json:
               schema:
                 type: string
-        '500':
+        "500":
           description: Server error
 
   /api/issuer/createSchema:
@@ -139,7 +139,7 @@ paths:
                       type: string
                       example: years
       responses:
-        '201':
+        "201":
           description: Schema created successfully
           content:
             application/json:
@@ -154,7 +154,7 @@ paths:
                   message:
                     type: string
                     example: Schema created and submitted successfully
-        '500':
+        "500":
           description: Server error
 
   /api/issuer/schema/{schemaName}:
@@ -168,7 +168,7 @@ paths:
           schema:
             type: string
       responses:
-        '200':
+        "200":
           description: Successful response
           content:
             application/json:
@@ -183,9 +183,9 @@ paths:
                     type: array
                     items:
                       type: string
-        '404':
+        "404":
           description: Schema not found
-        '500':
+        "500":
           description: Internal server error
 
   /api/issuer/createVerifiableCredential:
@@ -210,7 +210,7 @@ paths:
                   description: The schema name for the credential.
                   example: MembershipSchema
       responses:
-        '201':
+        "201":
           description: Verifiable Credential created successfully
           content:
             application/json:
@@ -227,7 +227,7 @@ paths:
                       "@context": "https://www.w3.org/2018/credentials/v1"
                       "type": ["VerifiableCredential"]
                       "issuer": "did:example:456"
-                      "credentialSubject": 
+                      "credentialSubject":
                         id: did:example:123
                         name: John Doe
                   hash:
@@ -240,7 +240,7 @@ paths:
                   status:
                     type: integer
                     example: 201
-        '400':
+        "400":
           description: Bad Request
           content:
             application/json:
@@ -287,13 +287,13 @@ paths:
                   type: string
                   example: CbVJs6RbAB8gXb1t1AB5z1hPzkhCkkAqYQMj7Mxq3HPt
       responses:
-        '200':
+        "200":
           description: Successfully stored VC hash
           content:
             application/json:
               schema:
                 type: string
-        '500':
+        "500":
           description: Server error
 
   /api/issuer/getVc:
@@ -318,13 +318,13 @@ paths:
                   type: string
                   example: did:polygon:testnet:0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
       responses:
-        '200':
+        "200":
           description: Successfully retrieved VC hash
           content:
             application/json:
               schema:
                 type: string
-        '500':
+        "500":
           description: Server error
 
   /api/issuer/verifyVC:
@@ -349,11 +349,11 @@ paths:
                   type: string
                   example: did:polygon:testnet:0xf39Fd6
       responses:
-        '200':
+        "200":
           description: Verification successful
           content:
             application/json:
               schema:
                 type: string
-        '500':
+        "500":
           description: Server error

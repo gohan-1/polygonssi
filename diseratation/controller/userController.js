@@ -1,39 +1,40 @@
 const { User } = require("../models/user");
 
+const register = async (details) => {
+  const newUser = new User({
+    username: details.username,
+    password: details.password, // Remember to hash the password before saving
+    email: details.email,
+  });
 
+  newUser
+    .save()
+    .then((user) => console.log("User created:", user))
+    .catch((err) => console.error("Error creating user:", err));
 
-const register = async(details)=>{
-   
-    const newUser = new User({
-        username: details.username,
-        password: details.password, // Remember to hash the password before saving
-        email: details.email
-      });
-      
-      newUser.save()
-        .then(user => console.log('User created:', user))
-        .catch(err => console.error('Error creating user:', err));
+  return true;
+};
 
-        return true;
-}
+const login = async (body) => {
+  try {
+    // Find the user by username and password
+    const user = await User.findOne({
+      username: body.username,
+      password: body.password,
+    });
 
-const login = async(body)=>{
-    try {
-        // Find the user by username and password
-        const user = await User.findOne({ username: body.username, password: body.password });
-    
-        if (!user) {
-          return []
-        }
-    
-        // User is found and credentials are correct
-        return user;
-      } catch (err) {
-        throw err;
-      }
-}
+    if (!user) {
+      return [];
+    }
 
-module.exports ={
-    register,
-    login
-}
+    // User is found and credentials are correct
+    return user;
+  } catch (err) {
+    throw err;
+  }
+};
+
+module.exports = {
+  register,
+  login,
+};

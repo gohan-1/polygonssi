@@ -14,8 +14,14 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@eslint/js": "^9.11.1",
+    "eslint": "^9.11.1",
+    "globals": "^15.9.0",
     "hardhat": "^2.22.7",
-    "jshint": "^2.13.6"
+    "husky": "^9.1.6",
+    "jshint": "^2.13.6",
+    "lint-staged": "^15.2.10",
+    "prettier": "3.3.3"
   },
   "dependencies": {
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",

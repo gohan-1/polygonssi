@@ -1,14 +1,8 @@
-/**
- *Submitted for verification at polygonscan.com on 2021-12-29
-*/
 
 //SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-/**
- *@title PolygonDidRegistry
- *@dev Smart Contract for Polygon DID Method
- */
+
 contract DidRegistry {
     address owner;
     struct vcDetails{
@@ -45,21 +39,20 @@ contract DidRegistry {
         owner = msg.sender;
      
     }
-    //modifier?
+    //modifier
     modifier onlyOwner(){
         require( msg.sender == owner, "message sender is not the owner");
         _;
     }
 
  /**
-     *@dev Check if a DID is finalized
      *@param _id - Address of the DID
      */
     function isDIDFinalized(address _id) public view returns (bool) {
         return did[_id].isFinalized;
     }
     /**
-     *@dev Finalize the DID after a set number of blocks
+     
      *@param _id - Address of the DID
      */
     function finalizeDID(address _id) public onlyController(_id) {
@@ -86,7 +79,7 @@ contract DidRegistry {
     }
 
     /**
-     *@dev Register a new DID
+    
      *@param _id - Address that will refer the DID doc
      *@param _doc - A string object that holds the DID Doc
      */
@@ -103,7 +96,6 @@ contract DidRegistry {
     }
 
     /**
-     *@dev Reads DID Doc from Chain
      *@param _id - Address that refers to the DID doc position
      */
     function getDID(address _id) public view returns (string memory) {
@@ -112,7 +104,7 @@ contract DidRegistry {
 
 
     /**
-     *@dev To Update the DID doc
+
      *@param _id - Address that refers to the DID doc
      *@param _doc - A String that holds the DID doc
      */
@@ -132,28 +124,15 @@ function storeVcHash(address _id, string memory _did,string memory _hash)
        
         vcStore[_id][_did].vcHash = _hash;
         emit vcHashStored(_id, _did);
-        // return (did[_id].controller, did[_id].created, did[_id].updated, did[_id].did_doc);
+      
     }
-      function getVcDetails(address _id,string memory _did) public view returns (string memory) {
+    function getVcDetails(address _id,string memory _did) public view returns (string memory) {
         return vcStore[_id][_did].vcHash;
     }
-
-//  function storeVcHash(address _id, string memory _did,string memory _hash)
-//         public onlyOwner()
-//     {
-       
-//         vcStore[_id][_did].vcHash = _hash;
-//         emit vcHashStored(_id, _did);
-//         // return (did[_id].controller, did[_id].created, did[_id].updated, did[_id].did_doc);
-//     }
-//       function getVcDetails(address _id,string memory _did) public view returns (string memory) {
-//         return vcStore[_id][_did].vcHash;
-//     }
-
     
 
     /**
-     *@dev To delete a DID from chain
+  
      *@param _id - Address that refers to the DID doc that need to be deleted
      */
     function deleteDID(address _id) public onlyController(_id) {

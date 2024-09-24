@@ -1,13 +1,14 @@
-[{
-            "testnet": {
-                  "URL": "http://127.0.0.1:8545",
-                  "CONTRACT_ADDRESS": "0xe1bc36ac1f0f1d7b77f0e1cf44633184076ac7af"
-            }
-      },
-      {
-            "mainnet": {
-                  "URL": "https://rpc-mainnet.maticvigil.com/",
-                  "CONTRACT_ADDRESS": "0x36863563fF027E9590837CD377bBCCB862E342B7"
-            }
-      }
+[
+  {
+    "testnet": {
+      "URL": "http://127.0.0.1:8545",
+      "CONTRACT_ADDRESS": "0xe1bc36ac1f0f1d7b77f0e1cf44633184076ac7af"
+    }
+  },
+  {
+    "mainnet": {
+      "URL": "https://rpc-mainnet.maticvigil.com/",
+      "CONTRACT_ADDRESS": "0x36863563fF027E9590837CD377bBCCB862E342B7"
+    }
+  }
 ]

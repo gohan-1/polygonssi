@@ -1,21 +1,20 @@
 // import * as log4js from "log4js";
 
-
 const networkConfiguration = require("../config/configuration.json");
-const {loggerWeb} = require('../config/logger');
+const { loggerWeb } = require("../config/logger");
 
 // const logger = log4js.getLogger();
 // logger.level = `debug`;
 
- class DidUriValidation {
+class DidUriValidation {
   /**
    * Polygon DID match or not.
    * @param did
    * @returns Returns true after polygon DID match successfully.
    */
-  async polygonDidMatch(did)  {
+  async polygonDidMatch(did) {
     let errorMessage;
-    const didWithTestnet= await this.splitPolygonDid(did);
+    const didWithTestnet = await this.splitPolygonDid(did);
 
     if (
       (did &&
@@ -48,11 +47,7 @@ const {loggerWeb} = require('../config/logger');
    * @param contractAddress
    * @returns Returns network url and contract address.
    */
-  async networkMatch(
-    did,
-    url=null,
-    contractAddress=null
-  ){
+  async networkMatch(did, url = null, contractAddress = null) {
     let errorMessage;
     const didWithTestnet = await this.splitPolygonDid(did);
 
@@ -64,8 +59,8 @@ const {loggerWeb} = require('../config/logger');
     ) {
       url = `${networkConfiguration[0].testnet?.URL}`;
       contractAddress = `${networkConfiguration[0].testnet?.CONTRACT_ADDRESS}`;
-      console.log('contacts')
-      console.log(CONTRACT_ADDRESS)
+      console.log("contacts");
+      console.log(CONTRACT_ADDRESS);
       return {
         url,
         contractAddress,
@@ -98,11 +93,10 @@ const {loggerWeb} = require('../config/logger');
    * @param did
    * @returns Returns Split data value to polygon DID.
    */
-  async splitPolygonDid(did){
-  
-    const splitDidValue= did.split(":")[2];
+  async splitPolygonDid(did) {
+    const splitDidValue = did.split(":")[2];
     return splitDidValue;
   }
 }
 
-module.exports.DidUriValidation = DidUriValidation
+module.exports.DidUriValidation = DidUriValidation;

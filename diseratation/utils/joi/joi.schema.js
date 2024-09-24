@@ -1,5 +1,5 @@
-import joi from 'joi';
-import joiDate from '@hapi/joi-date';
+import joi from "joi";
+import joiDate from "@hapi/joi-date";
 const Joi = joi.extend(joiDate);
 
 // exports.didDocSchema = Joi.object().keys({
@@ -42,18 +42,26 @@ exports.getSchema = Joi.allow(null);
 exports.createVerifiableCredentialSchema = Joi.object().allow(null);
 
 exports.createSchema = Joi.object().keys({
-    schemaName: Joi.string().alphanum().required(),
-    description: Joi.string().required(),
-    attributes: Joi.array().items(Joi.object().keys({
+  schemaName: Joi.string().alphanum().required(),
+  description: Joi.string().required(),
+  attributes: Joi.array()
+    .items(
+      Joi.object().keys({
         attributeName: Joi.string().alphanum().required(),
-        type: Joi.string().valid('alphabet', 'alphanumeric', 'email', 'date', 'number').required(),
+        type: Joi.string()
+          .valid("alphabet", "alphanumeric", "email", "date", "number")
+          .required(),
         required: Joi.boolean().required(),
         description: Joi.string(),
         maxLength: Joi.string(),
-    })).required(),
-    expiration: Joi.object().keys({
-        value: Joi.number().required(),
-        unit: Joi.string().valid('years','months','days').required(),
-    }).allow(null),
-    dependantSchemas: Joi.array().items(Joi.string()).required(),
+      }),
+    )
+    .required(),
+  expiration: Joi.object()
+    .keys({
+      value: Joi.number().required(),
+      unit: Joi.string().valid("years", "months", "days").required(),
+    })
+    .allow(null),
+  dependantSchemas: Joi.array().items(Joi.string()).required(),
 });

@@ -2,7 +2,6 @@
 // import {verifyJwt} from '../utils/keysHelper';
 // // import {verifyTemplates} from '../utils/tech5Integration';
 
-
 // exports.verifySign = async (req, res, next) => {
 //     try {
 //         if(req.header('publicKey') && req.header('signature')){
